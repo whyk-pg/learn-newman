@@ -1,13 +1,19 @@
 {
   "scripts": {
+    "test": "tsx src/index.newman.ts && pnpm format",
     "check": "biome check --unsafe .",
-    "check:write": "pnpm check --write"
+    "format": "pnpm check --write"
   },
   "volta": {
     "node": "20.16.0"
   },
   "packageManager": "pnpm@9.4.0",
   "devDependencies": {
-    "@biomejs/biome": "^1.8.3"
+    "@biomejs/biome": "^1.8.3",
+    "@types/newman": "^5.3.6",
+    "@types/postman-collection": "^3.5.10",
+    "newman": "^6.2.1",
+    "postman-collection": "^4.5.0",
+    "tsx": "^4.19.1"
   }
 }

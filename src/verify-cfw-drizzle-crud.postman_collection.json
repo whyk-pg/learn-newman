@@ -1,0 +1,119 @@
+{
+  "item": [
+    {
+      "id": "7eb1020c-8588-422a-bfcb-bbc186280fdc",
+      "name": "GET",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "8787",
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET"
+      },
+      "response": [],
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "b58172f8-3d9f-4427-a358-f961122fd184",
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"\\u30EC\\u30B9\\u30DD\\u30F3\\u30B9\\u30DC\\u30C7\\u30A3\\u306EJSON\\u304C\\u60F3\\u5B9A\\u901A\\u308A\\u304B\",()=>{const jsonData=pm.response.json();pm.expect(jsonData.status).to.eql(200);pm.expect(jsonData.method).to.eql(\"GET\");pm.expect(jsonData.text).to.eql(\"OK!\");pm.expect(jsonData.apiKey).to.eql(\"Example_0000\")})"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "f2db9b03-9028-44dd-b388-9c8abe3477c4",
+      "name": "POST",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "8787",
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "method": "POST"
+      },
+      "response": [],
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "fdcc3f8b-2d64-4db0-af06-101a525a880f",
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"\\u30EC\\u30B9\\u30DD\\u30F3\\u30B9\\u30DC\\u30C7\\u30A3\\u306EJSON\\u304C\\u60F3\\u5B9A\\u901A\\u308A\\u304B\",()=>{const jsonData=pm.response.json();pm.expect(jsonData.status).to.eql(200);pm.expect(jsonData.method).to.eql(\"POST\");pm.expect(jsonData.text).to.eql(\"OK!\");pm.expect(jsonData.apiKey).to.eql(\"Example_0000\")})"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "eb6bbc1a-4811-40c2-ad25-21b969988571",
+      "name": "PATCH",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "8787",
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "method": "PATCH"
+      },
+      "response": [],
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "4f205b5d-74e6-4f56-9395-a993a9d6005f",
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"\\u30EC\\u30B9\\u30DD\\u30F3\\u30B9\\u30DC\\u30C7\\u30A3\\u306EJSON\\u304C\\u60F3\\u5B9A\\u901A\\u308A\\u304B\",()=>{const jsonData=pm.response.json();pm.expect(jsonData.status).to.eql(200);pm.expect(jsonData.method).to.eql(\"PATCH\");pm.expect(jsonData.text).to.eql(\"OK!\");pm.expect(jsonData.apiKey).to.eql(\"Example_0000\")})"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "d13c2c83-fbb0-4e3c-b5dd-c14d917eb6f3",
+      "name": "DELETE",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "8787",
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "method": "DELETE"
+      },
+      "response": [],
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "857fe6c7-9fcf-447e-81a3-5176ddf0d591",
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"\\u30EC\\u30B9\\u30DD\\u30F3\\u30B9\\u30DC\\u30C7\\u30A3\\u306EJSON\\u304C\\u60F3\\u5B9A\\u901A\\u308A\\u304B\",()=>{const jsonData=pm.response.json();pm.expect(jsonData.status).to.eql(200);pm.expect(jsonData.method).to.eql(\"DELETE\");pm.expect(jsonData.text).to.eql(\"OK!\");pm.expect(jsonData.apiKey).to.eql(\"Example_0000\")})"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "event": [],
+  "variable": [],
+  "info": {
+    "_postman_id": "ad111565-e8eb-4650-a873-543f870a5cd1",
+    "name": "learn-newman",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  }
+}
